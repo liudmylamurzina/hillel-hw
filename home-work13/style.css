@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+}	
+.body {
+	font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+	font-style: normal;
+	font-weight: normal;    
+	background: #FFFFFF;
+	margin: 0;
+}
