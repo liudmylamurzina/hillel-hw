@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Stickers</title>
+        <link rel="stylesheet" href="./styles.css" />                
+        <script src="../common/js/utils.js" defer></script>
+        <script src="./RestApi.js" defer></script>
+        <script src="./scripts.js" defer></script>
+    </head>
+		<body class="body">
+			<form id="addStickersForm" class="form">						
+				<div class="header general">							
+					<button type="submit" id="addBtn" class="add-btn">Add</button>
+				</div>
+				<div class="stickers general" id="stickersList"> 
+				</div>					
+			</form>
+			<script type="text/template" id="stickerItemTemplate">
+				<div class="stickers-item general" data-id="{{id}}">
+					<div class="stickers-item-header general" id="stickersItemHeader">
+						<span class="delete-btn">✘</span>
+					</div>
+					<textarea class="stickers-item-text-input general" id="stickersItemTextInput">						
+							{{description}}
+					</textarea>	
+				</div>				
+			</script>      
+		</body>
+  </html>  

@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}	
+.body {
+	font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+	font-style: normal;
+	font-weight: normal;    
+	background: #FFFFFF;
+	margin: 0;
+}
+.general {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+
+}
+.header {
+	text-align: right;	
+}	
+.stickers {
+	display: flex;
+  flex-wrap: wrap;
+	
+}
+.stickers-item{
+	min-width: 30%;
+}	
+.stickers-item-header {
+		text-align: right;
+}		
+.stickers-item-text {
+		text-align: center;
+}
+.stickers-item-text-input{
+	text-align: center;
+	width: 90%;
+}
