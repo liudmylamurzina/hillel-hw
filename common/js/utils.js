@@ -1,7 +1,15 @@
-function interpolate(template, obj) {
-	for (key in obj) {
-			template = template.replaceAll(`{{${key}}}`, obj[key]);
-	}
+export function interpolate(template, obj) {
+    for (let key in obj) {
+        template = template.replaceAll(`{{${key}}}`, obj[key]);
+    }
 
-	return template;
+    return template;
+}
+
+export function debounce(fn, timeout = 300) {
+    let timerId = null;
+    return (...rest) => {
+        clearTimeout(timerId);
+        timerId = setTimeout(() => fn(...rest), timeout);
+    };
 }
